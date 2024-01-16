@@ -1,9 +1,13 @@
-import { Text, View } from 'react-native';
+import { View, Text } from 'react-native';
 
+/*
+    Timeline Screen displays current day view with the day's posts in a feed by default.
+    User can change view to weekly/monthly views.
+*/
 function TimelineScreen() {
     return (
         <View>
-            <Text>Timeline</Text>
+            <Text>Today</Text>
         </View>
     );
 }
