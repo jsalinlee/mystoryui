@@ -37,20 +37,3 @@ function NavigationBar() {
 }
 
 export default NavigationBar;
-
-const styles = StyleSheet.create({
-    header: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '100%',
-        paddingTop: 20,
-        alignItems: 'center',
-    },
-    headerTitle: {
-        fontFamily: 'Lemon_400Regular',
-        fontSize: 24,
-        color: Colors.primary,
-    },
-    profileButton: {},
-});
