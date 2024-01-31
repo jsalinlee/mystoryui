@@ -33,6 +33,7 @@ function RootNavigation() {
                     headerTitle: HeaderBar,
                     headerStyle: { height: 120 },
                 }}
+                initialRouteName='TimelineScreen'
             >
                 <Tab.Screen name='HomeScreen' component={HomeScreen} options={tabConfig('home')} />
                 <Tab.Screen name='TimelineScreen' component={TimelineScreen} options={tabConfig('calendar-outline')} />

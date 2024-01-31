@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { POSTS } from '../data/dummy-data';
 import MonthDisplay from '../components/timeline/MonthDisplay';
-import WeekSlider from '../components/timeline/WeekSlider';
+import WeekDisplay from '../components/timeline/WeekDisplay';
 
 /*
     Timeline Screen displays current day view with the day's posts in a feed by default.
@@ -22,8 +22,8 @@ function TimelineScreen() {
     }
     return (
         <View style={styles.container}>
-            <CalendarList onDayPress={(day) => getPostsByDay(day)} horizontal={true} pagingEnabled={true} />
-            <WeekSlider />
+            {/* <CalendarList onDayPress={(day) => getPostsByDay(day)} horizontal={true} pagingEnabled={true} /> */}
+            <WeekDisplay />
             <View>
                 <FlatList
                     data={currentPosts}
