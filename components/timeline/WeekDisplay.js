@@ -5,12 +5,17 @@ import WeekSlider from './WeekSlider';
 
 function WeekDisplay() {
     const [selectedDate, setSelectedDate] = useState(new Date());
+
+    function handlePressDate(day) {
+        setSelectedDate(day);
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.banner}>
                 <Text style={styles.bannerText}>{format(selectedDate, 'MMMM y')}</Text>
             </View>
-            <WeekSlider selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
+            <WeekSlider selectedDate={selectedDate} handlePressDate={handlePressDate} />
         </View>
     );
 }
